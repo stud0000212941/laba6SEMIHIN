@@ -1,6 +1,6 @@
 import streamlit as st
-import requests
-
+import pandas as pd
+df = pd.read_csv('data.csv')
 st.title(
     "#Веб-приложение для обработки данных пассажиров “Титаника”"
 )
@@ -13,8 +13,9 @@ option = st.selectbox(
     'Выберете задачу',
     ('задача 1)', 'задача 2)'))
 if option == 'задача 1)':
-  user_input_class = st.text_input("Введите класс пасажира >>: ")
-  user_input_sex = st.text_input("Пол пасажира >>: ")
+  user_input_class = st.text_input("Введите класс пасажира "1, 2 или 3" >>: ")
+  user_input_sex = st.text_input("Пол пасажира "male или female>>: ")
+  
   st.dataframe(sik)
 if option == 'задача 2)':
   option_2 = st.selectbox(
