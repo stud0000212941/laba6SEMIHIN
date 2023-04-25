@@ -13,7 +13,6 @@ option = st.selectbox(
     'Выберете задачу',
     ('задача 1)', 'задача 2)'))
 if option == 'задача 1)':
-  user_input_sex = st.text_input("Пол пасажира "male или female>>: ")
   user_input_class = st.selectbox(
     'класс пасажира',
     (1, 2, 3))
