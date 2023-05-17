@@ -2,10 +2,12 @@ import streamlit as st
 import pandas as pd
 df = pd.read_csv('data.csv')
 def funk1(user_input_class,user_input_sex,df):
-    sik =df[(df['Pclass']==user_input_class) & (df['Sex']==user_input_sex) & (df['Survived']==1)][["Name","Sex","Age"]]
+    sik =df[(df['Pclass']==user_input_class) & (
+        df['Sex']==user_input_sex) & (
+        df['Survived']==1)][["Name","Sex","Age"]]
     return sik
 def funk2(searched_survived,df):
-    spas=df[(df["Fare"]==0.0) & (df['Survived']==searched_survived)]
+    spas = df[(df["Fare"]==0.0) & (df['Survived']==searched_survived)]
     return spas
 st.title(
     "#Веб-приложение для обработки данных пассажиров “Титаника”"
@@ -35,7 +37,7 @@ if option == 'задача 2)':
       searched_survived = 1
   else:
       searched_survived = 0
-  spas=funk2(searched_survived,df)
+  spas = funk2(searched_survived,df)
   st.dataframe(spas)
 else: st.write(
     "#Выберете задачу"
