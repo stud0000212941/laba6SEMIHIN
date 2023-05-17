@@ -1,6 +1,6 @@
 import pandas as pd
 from io import StringIO
-from lab6.py import funk2          
+from .lab6.py import funk2          
 def test_funk2():
   csv_string = """PassengerId,Survived,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare
   7,0,1,"McCarthy, Mr. Timothy J",male,54,0,0,17463,51.8625
