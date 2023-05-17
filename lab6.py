@@ -39,6 +39,7 @@ if option == 'задача 2)':
       searched_survived = 0
   spas = funk2(searched_survived,df)
   st.dataframe(spas)
-else: st.write(
+else:
+    st.write(
     "#Выберете задачу"
 )
