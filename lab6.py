@@ -25,7 +25,7 @@ if option == 'задача 1)':
   user_input_sex = st.selectbox(
     'Пол пасажира',
     ('male', 'female'))
-    sik=funk1(user_input_class,user_input_sex,df)
+  sik=funk1(user_input_class,user_input_sex,df)
   st.dataframe(sik)
 if option == 'задача 2)':
   option_2 = st.selectbox(
